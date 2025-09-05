@@ -17,15 +17,15 @@ const Products = () => {
     <>
      <Navbar />
     <div className="container">
-      <h1>Prodotti</h1>
-      <div className="row">
+      <h1 className="mb-3">Prodotti</h1>
+      <div className="row g-4">
         {products.map(product => (
           <div className="col-3" key={product.id}>
             <div className="card h-100">
-              <img src={product.image} alt={product.title} />
+              <img className="object-fit-cover" src={product.image} alt={product.title} />
               <div className="card-body">
                 <h5 className="card-title">{product.title}</h5>
-                <p className="card-text">{product.description.slice(0, 100)}...</p>
+                <p className="card-text">{product.description.slice(0, 250)}...</p>
                 <p className="card-text">{product.category}</p>
                 <p className="card-text"><strong>{product.price} €</strong></p>
               </div>
