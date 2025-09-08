@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from "../components/Navbar";
 
 const Products = () => {
 
@@ -15,7 +14,6 @@ const Products = () => {
 
   return (
     <>
-     <Navbar />
     <div className="container">
       <h1 className="mb-3">Prodotti</h1>
       <div className="row g-4">
