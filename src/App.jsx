@@ -14,9 +14,9 @@ function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />}></Route>
-          <Route path="/About" element={<About />}></Route>
-          <Route path="/Products" element={<Products />}></Route>
-          <Route path="/Products/:id" element={<DetailProduct />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/products" element={<Products />}></Route>
+          <Route path="/products/:id" element={<DetailProduct />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
