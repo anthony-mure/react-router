@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 const Products = () => {
 
@@ -26,6 +27,7 @@ const Products = () => {
                 <p className="card-text">{product.description.slice(0, 250)}...</p>
                 <p className="card-text">{product.category}</p>
                 <p className="card-text"><strong>{product.price} €</strong></p>
+                <NavLink className="btn btn-primary" to="/Products/:id">Dettaglio prodotto</NavLink>
               </div>
             </div>
           </div>
